@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+	<changeSet id="20222509202027" author="Sunil">
+		<sql>
+			INSERT INTO patient(full_name, password, email, mobile, gender ) VALUES
+			('Sunil Patil','user123','sunilnobeltraining@gmail.com','+91 8055812181','Male'),
+			('Kalyani Sawant','user123','sawantkalyani95@gmail.com','+91 8956774451','Female'),
+			('Juhi Mitter','user123','juhi25@gmail.com','+91 907 0198136','Female'),
+			('Radhika Arjun Datta','user123','radhika@gmail.com','+91 00 09421920','Female');
+
+		</sql>
+	</changeSet>
+</databaseChangeLog>

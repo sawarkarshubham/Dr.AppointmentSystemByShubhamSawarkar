@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+	<changeSet id="20222509202023" author="Sunil">
+		<sql>
+			INSERT INTO doctor (full_name, password, email, mobile, gender, speciality, experience) VALUES
+			('Dr. Mangesh Shinde','Doctor123','mangeshshinde8149@gmail.com','+918063895566','Male','Ontologist',10),
+			('Dr. Rahul Kolawale','Doctor123','rahulkolawale09@gmail.com','+918055313331','Male','Cardiologist,Dermatologist',12);
+		</sql>
+	</changeSet>
+</databaseChangeLog>
